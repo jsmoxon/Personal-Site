@@ -9,11 +9,6 @@ a:hover {
 color: #036564;
 }
 
-.email {
-margin-top:150px;
-margin-left:30px;
-}
-
 h1 {font-size:30px;
 font-family: 'courier';
 }
@@ -25,16 +20,28 @@ color: #073F41;
 #container {background:;}
 
 #links{
-background-color:  ;
+margin-top:60px;
 float:left;
 clear: both;
 margin-left: 280px;
 display:inline;
 }
 
+.email {
+margin-top:150px;
+margin-left:30px;
+}
+
+#main_area {
+background:;
+margin-top: 90px;}
+
 #name{
+background:;}
+
+.header {
 margin-left: 200px;
-margin-top: 20px;
+margin-top: 20px;;
 }
 
 ul, li{
@@ -45,13 +52,13 @@ margin: 0;
 
 #content {
 margin-left: 20px;
-margin-top: 40px;}
+}
 
 .link_list a{
-font-size:14px;
-text-decoration:none;
+font-size: 13px;
 font-family: 'helvetica';
-line-height:25px;}
+line-height:22px;
+color: black;}
 
 #about {
 width: 400px;
@@ -62,6 +69,7 @@ margin-top: 90px;
 #about p{
 font-size: 13px;
 width: 400px;
+font-family: 'helvetica';
 }
 
 #links li {
@@ -70,7 +78,7 @@ padding:1em;
 }
 
 #main {
-background: ;
+background: yellow ;
 height: 600px;
 margin-top:-40px;
 }
