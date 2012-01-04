@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h3>Links</h3>
+<h5>Essays</h5>
+<ul class="link_list">
+  <ul><a href="http://www.paulgraham.com/articles.html">Paul Graham's Essays</a>
+    <li class="sub_list"><a href="http://www.paulgraham.com/love.html">How To Do What You Love</a></li>
+    <li class="sub_list"><a href="http://www.paulgraham.com/hs.html">What You'll Wish You'd Known</a></li>
+  </ul>
+  <li><a href="http://www.gourmet.com/magazine/2000s/2004/08/consider_the_lobster?currentPage=1">Consider the Lobster</a> -- David Foster Wallace</li>
+  <li><a href="http://www.npr.org/blogs/thetwo-way/2011/10/06/141120359/read-and-watch-steve-jobs-stanford-commencement-address">Steve Jobs' 2005 Commencement Speech</a></li>
+</ul>
+<br/>
+<h5>Articles</h5>
+<ul class="link_list">
+ <li><a href="http://www.theatlantic.com/magazine/archive/2010/03/how-a-new-jobless-era-will-transform-america/7919/?s\
+ingle_page=true">How a New Jobless Era Will Transform America</a> -- Don Peck</li>
+</ul>
+<br/>
+<h5>Fiction</h5>
+<ul class="link_list">
+ <li><a href="http://www.tiger-town.com/whatnot/updike/">A & P</a> -- John Updike</li>
+</ul>
+
+
+{% endblock main%}

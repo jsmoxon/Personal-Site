@@ -1,0 +1,12 @@
+#PYTHONPATH="/Users/jmoxon/Desktop/Writing/jackmoxon.com/snowflake/django_cron:$PYTHONPATH python django_cron"
+
+from django_cron import cronScheduler, Job
+from frontend.views import *
+
+class sendMail(Job):
+    run_every = 60
+
+    def job(self):
+        cron_email()
+
+cronScheduler.register(sendMail)

@@ -1,0 +1,123 @@
+/* for your new search page (right-justifies the form field) */
+
+
+/* Site-wide formatting */
+a {text-decoration: none;}
+a:hover {color:9C052A;} 
+
+.red {color:9C052A;}
+.green {color:green;}
+
+h1, h2, h3, h4, h5, h6, a {
+color: 23015E;
+font-family:'Palatino', serif;
+font-weight:lighter;
+text-align:left;
+}
+
+h1 {
+font-size: 50px;
+}
+
+h2 {
+font-size: 20px;
+line-height: 0px
+}
+
+h3 {font-size: 30px;}
+
+h4 {font-size: 16px;}
+
+
+ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+font-size: 11px;
+}
+
+li {
+list-style: none; 
+margin:0; 
+}
+
+
+/* Breadcrumb. Markup taken from http://projectcerbera.com/web/articles/breadcrumbs-markup */
+#breadcrumb, #breadcrumb ol, #breadcrumb li {
+ margin: 0;
+ padding: 0;
+ display: inline;
+ list-style: none;
+}
+#breadcrumb ol {
+ margin-left: 0.125em;
+ padding-left: 0.25em;
+ background: url(./images/gt.gif) no-repeat left center;
+}
+#breadcrumb li li {
+ margin-left: 8px; /* Width of the arrow */
+}
+#breadcrumb, #breadcrumb a {
+ margin-left: 0;
+ padding-left: 0;
+ color:#666;
+}
+
+/* Seach */
+#searchsidebar h4{
+font-variant:small-caps;
+}
+
+dd {
+color:purple;
+}
+
+dt {
+color: 23015E;
+font-family:'Palatino', serif;
+font-size: 12px;
+}
+
+#searchsidebar ui {
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+
+#searchsidebar li
+{
+/*background-image:url(./images/gt.gif);
+background-repeat:no-repeat;
+background-position:0px 5px; 
+padding-left:10px;
+*/
+color:#666;
+font-size:10px;
+}
+
+.tile {
+margin: 5px;
+float:left;
+max-width:120px;
+}
+
+li.make, li.model, li.price, li.originalprice, li.sale, {
+display: inline;
+color: 23015E;
+font-family:'Palatino', serif;
+font-size: 12px;
+}
+
+li.model, li.price, li.originalprice {color: #666;}
+li.price, li.originalprice {margin-left:15px;}
+li.sale {color:9C052A; margin-left:2px;}
+li.originalprice {text-decoration: line-through;}
+
+li.colors {
+margin: 0;
+padding: 0;
+display: inline;
+list-style: none;
+}
+
+#ref_make, #ref_model, #ref_price {font-size: 14px;}

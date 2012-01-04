@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>CONTACT!</h1>
+
+<form action="/send_email/" method="get">
+ <input id="subject" />
+ <input id="message" />
+ <input id="from_email" />
+ <input type="submit" value="send" />
+</form>
+{% endblock main%}
