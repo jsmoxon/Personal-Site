@@ -26,7 +26,7 @@ def blog(request):
     return render_to_response('blog.html')
 
 def contact(request):
-    return render_to_response('contact.html')
+    return render_to_response('email.html')
 
 def derain(request):
     return render_to_response('derain.html')

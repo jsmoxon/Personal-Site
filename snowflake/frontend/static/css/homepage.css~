@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, p, a {
+h1, h2, h3, h4, h5, a {
 color: black;
 font-family:'courier', serif;
 font-weight:lighter;
@@ -39,25 +39,19 @@ margin: 0;
 }
 
 #content {
-border: 1px solid black;
 margin-left: 20px;
 margin-top: 40px;}
 
 .link_list a{
 font-size:14px;
 text-decoration:none;
-}
-
-.sub_list a {
-font-size:12px;
-margin-left: 10px;
-}
+font-family: 'helvetica';
+line-height:25px;}
 
 #about {
 width: 400px;
 float: right;
 margin-top: 90px;
-background:yellow;
 }
 
 #about p{

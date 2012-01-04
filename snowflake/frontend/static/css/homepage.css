@@ -9,6 +9,11 @@ a:hover {
 color: #036564;
 }
 
+.email {
+margin-top:150px;
+margin-left:30px;
+}
+
 h1 {font-size:30px;
 font-family: 'courier';
 }
@@ -52,7 +57,6 @@ line-height:25px;}
 width: 400px;
 float: right;
 margin-top: 90px;
-background:yellow;
 }
 
 #about p{
