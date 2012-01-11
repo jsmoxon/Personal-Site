@@ -6,6 +6,6 @@
   <li><a href="http://essayr.com">Essayr</a></li>
   <li><a href="http://clothesliner.com">Clothesliner</a></li>
   <br/>
-  <li><a href="https://github.com/jsmoxon">github</a></li>
+  <li><a href="https://github.com/jsmoxon">(github)</a></li>
 </ul>
 {% endblock main%}

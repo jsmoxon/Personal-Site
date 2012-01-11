@@ -11,7 +11,9 @@ def home(request):
     return render_to_response('base.html')
 
 def cv(request):
-    return render_to_response('cv.html')
+    response = HttpResponse(pdf, 'jsm.pf')
+    response['Content-Disposition'] = 'attachment, filename=%s.pdf' % filename
+    return response
 
 def projects(request):
     return render_to_response('projects.html')

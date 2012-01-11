@@ -26,7 +26,7 @@ def blog(request):
     return render_to_response('blog.html')
 
 def contact(request):
-    return render_to_response('contact.html')
+    return render_to_response('email.html')
 
 def derain(request):
     return render_to_response('derain.html')
@@ -59,6 +59,4 @@ def cron_email():
         ,
         message,
         ), "\r\n")
-    send_mail(subject, body, from_email, ['jsmoxon@gmail.com'], fail_silently=Fal\
-se)
-    return HttpResponseRedirect('/')
+    send_mail(subject, body, from_email, ['jsmoxon@gmail.com'], fail_silently=False)
