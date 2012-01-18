@@ -1,0 +1,82 @@
+/* Header and Overall Site*/
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Stoke', serif;
+
+}
+
+a:visited, a {
+color: #0B7CD9;
+text-decoration: none;
+}
+
+#container{
+
+}
+
+#header {
+margin-top:10px;
+margin-bottom:30px;
+}
+
+#namediv {
+
+}
+
+#headerlinks {
+float: right;
+}
+
+/* Main Section */
+
+#main {
+margin-bottom:30px;
+}
+
+/* CV Related */
+
+#cv h4, h5, h6, li{
+font-family: 'helvetica';
+}
+
+#cv h4, h5, h6{
+color: #0B7CD9;
+}
+
+.cv_bullet {
+list-style-type: circle;
+}
+
+.jobs {
+font-family: 'helvetica';
+
+}
+
+.skills {
+margin-left:50px;
+}
+
+
+#about  {
+float: right;
+}
+
+.email {
+margin-top: 150px;
+}
+
+.link_list a{
+color: #777;
+}
+
+/* Footer */
+
+
+#footer a{
+font-family: 'Stoke', serif;
+}
+
+#footer li {
+display: inline;
+padding: 5px;
+}

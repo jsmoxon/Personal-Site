@@ -8,12 +8,10 @@ import string
 
 
 def home(request):
-    return render_to_response('base.html')
+    return render_to_response('photo.html')
 
 def cv(request):
-    response = HttpResponse(pdf, 'jsm.pf')
-    response['Content-Disposition'] = 'attachment, filename=%s.pdf' % filename
-    return response
+    return render_to_response('cv.html')
 
 def projects(request):
     return render_to_response('projects.html')

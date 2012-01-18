@@ -1,46 +1,79 @@
 {% load static %}
-<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN” “http://www.w3.org/TR/html4/strict.dtd”>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/reset.css">
-  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/960.css">
-  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/text.css">
-  <link rel="stylesheet" type="text/css" media="all" href="{% get_static_prefix %}css/homepage.css">
- 
-  <title>
-    Jack Moxon
-    </title>
+
+        <!-- Basic Page Needs                                                                      \
+                                                                                                    
+  ================================================== -->
+        <meta charset="utf-8">
+        <title>Jack Moxon</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!--[if lt IE 9]>                                                                          \
+                                                                                                    
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>         \
+                                                                                                    
+        <![endif]-->
+
+        <!-- Mobile Specific Metas                                                                 \
+                                                                                                    
+  ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- CSS                                                                                   \
+                                                                                                    
+  ================================================== -->
+        <link rel="stylesheet" href="{% get_static_prefix %}css/base.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/skeleton.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/layout.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/style.css">
+        <style type="text/css">
+         body {background-image:url("{% get_static_prefix %}images/exclusive_paper.png")}
+        </style>
+
+        <!-- Javascript                                                                            \
+                                                                                                    
+        ================================================== -->
 </head>
 <body>
-<div id="container" class="container_12">
-<div id="name">
-<h1 class="header"><a href="/">Jack Moxon</a></h1>
-</div><!--closes the name div-->
-<div id="content" class="alpha omega grid_6">
-<div id="main_area">
+<div id="container" class="container">
+  <div id="header" class="sixteen columns">
+    <div id="namediv" class="six columns">
+      <h1><a href="/">Jack Moxon</a></h1>
+    </div><!--closes namediv-->
+    <div id="headerlinks" class="four columns">
+    </div><!--closes headerlinks-->
+  </div><!--closes header-->
+
+  <div id="main" class="sixteen columns">
+    <div id="content" class="six columns">
 {% block main %}
-{% endblock main%}
-</div><!--closes main_area div-->
-</div><!--closes content div-->
+{% endblock main %}
+    </div><!--closes content-->
+    
+    <div id="about" class="six columns">
+      <h4>About</h4>
+     <p>Chambray synth cardigan delectus leggings. Food truck you probably haven't heard of them craft beer cliche, sartorial vinyl chambray nostrud ex butcher shoreditch eiusmod. Accusamus officia nihil, lomo wolf nesciunt vero mcsweeney's portland vinyl. Mcsweeney's mixtape et vegan jean shorts, officia in you probably haven't heard of them before they sold out hoodie squid assumenda. Duis banh mi leggings ut, messenger bag esse tattooed chambray.<br/><br/>
+Freegan enim thundercats, you probably haven't heard of them put a bird on it occaecat gluten-free high life keytar ex DIY skateboard. Gentrify biodiesel twee, food truck terry richardson ullamco butcher magna. Sunt id aliquip, biodiesel laboris portland echo park ea nostrud viral voluptate brooklyn bicycle rights minim duis.<p>
+    </div><!--closes about-->
+  </div><!--closes main-->
+<center>
+  <div id="footer" class="six columns offset-by-five">
+    <ul>
+      <li><a href="/cv/">CV</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/links/">Favorites</a></li>
+      <li><a href="/contact/">Contact</a></li>
+  </div><!--closes footer-->
+</center>
 
-<div id="about">
-<h3>About</h3>
-<p>My name is John Sumner Moxon, but everyone except my high school Geometry teacher calls me “Jack”.  I am learning web development and currently work for Harbor Research.<br/><br/>
-I play ultimate frisbee, ride my bicycle and reside in San Francisco, California. My favorite artists are Elvis Costello, P.G. Wodehouse, <a href="/derain/">Andre Derain</a>, Woody Allen, Wes Anderson and Belle & Sebastian. 
-<br/><br/>
-Please feel free to contact me. I love to meet and hear from new people. 
-</p>
-</div><!--closes the about div-->
+</div><!--closes container-->
 
-<div id="links">
-  <ul>
-    <li><a href="http://www.linkedin.com/pub/jack-moxon/19/12a/341">CV</a></li>
-    <li><a href="/projects/">Projects</a></li>
-    <li><a href="/links/">Favorites</a></li>
-<!--    <li><a href="/quotes/">Quotes</a></li>-->
-<!--    <li><a href="/blog/">Blog</a></li>-->
-    <li><a href="/contact/">Contact</a></li>
 
-    </ul>
-  </div> <!--closes the links div-->
+
 </body>
 </html>

@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+        <!-- Basic Page Needs                                                                      \
+                                                                                                    
+  ================================================== -->
+        <meta charset="utf-8">
+        <title>Jack Moxon</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!--[if lt IE 9]>                                                                          \
+                                                                                                    
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>         \
+                                                                                                    
+        <![endif]-->
+
+        <!-- Mobile Specific Metas                                                                 \
+                                                                                                    
+  ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- CSS                                                                                   \
+                                                                                                    
+  ================================================== -->
+        <link rel="stylesheet" href="{% get_static_prefix %}css/base.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/skeleton.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/layout.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Stoke' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+         body {background-image:url("{% get_static_prefix %}images/exclusive_paper.png")}
+        </style>
+
+        <!-- Javascript                                                                            \
+                                                                                                    
+        ================================================== -->
+</head>
+<body>
+<div id="container" class="container">
+  <div id="header" class="sixteen columns">
+    <div id="namediv" class="six columns">
+      <h1><a href="/">Jack Moxon</a></h1>
+    </div><!--closes namediv-->
+    <div id="headerlinks" class="four columns">
+    </div><!--closes headerlinks-->
+  </div><!--closes header-->
+
+  <div id="main" class="sixteen columns">
+    <div id="content" class="six columns">
+{% block main %}
+{% endblock main %}
+    </div><!--closes content-->
+  </div><!--closes main-->
+<center>
+  <div id="footer" class="six columns offset-by-five">
+    <ul>
+      <li><a href="/cv/">CV</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/links/">Favorites</a></li>
+      <li><a href="/contact/">Contact</a></li>
+  </div><!--closes footer-->
+</center>
+
+</div><!--closes container-->
+
+
+
+</body>
+</html>
