@@ -5,7 +5,7 @@ font-family: 'Stoke', serif;
 }
 
 a:visited, a {
-
+color: #0B7CD9;
 text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ margin-top: 150px;
 }
 
 .link_list a{
-
+color: #777;
 }
 
 /* Footer */
