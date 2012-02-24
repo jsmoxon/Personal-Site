@@ -17,6 +17,7 @@ urlpatterns = patterns('',
     url(r'derain/', 'snowflake.frontend.views.derain'),                   
     url(r'send_email', 'snowflake.frontend.views.send_email'),
     url(r'^pagelever', direct_to_template, {'template': 'pagelever.html'}),
+    url(r'^kiva', direct_to_template, {'template': 'kiva.html'}),
 
 )
 
