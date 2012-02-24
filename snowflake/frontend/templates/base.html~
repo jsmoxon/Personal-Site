@@ -31,8 +31,9 @@
         <link rel="stylesheet" href="{% get_static_prefix %}css/skeleton.css">
         <link rel="stylesheet" href="{% get_static_prefix %}css/layout.css">
         <link rel="stylesheet" href="{% get_static_prefix %}css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Stoke' rel='stylesheet' type='text/css'>
         <style type="text/css">
-         body {background-image:url("{% get_static_prefix %}images/exclusive_paper.png")}
+<!--         body {background-image:url("{% get_static_prefix %}images/exclusive_paper.png")}-->
         </style>
 
         <!-- Javascript                                                                            \
@@ -57,8 +58,14 @@
     
     <div id="about" class="six columns">
       <h4>About</h4>
-     <p>Chambray synth cardigan delectus leggings. Food truck you probably haven't heard of them craft beer cliche, sartorial vinyl chambray nostrud ex butcher shoreditch eiusmod. Accusamus officia nihil, lomo wolf nesciunt vero mcsweeney's portland vinyl. Mcsweeney's mixtape et vegan jean shorts, officia in you probably haven't heard of them before they sold out hoodie squid assumenda. Duis banh mi leggings ut, messenger bag esse tattooed chambray.<br/><br/>
-Freegan enim thundercats, you probably haven't heard of them put a bird on it occaecat gluten-free high life keytar ex DIY skateboard. Gentrify biodiesel twee, food truck terry richardson ullamco butcher magna. Sunt id aliquip, biodiesel laboris portland echo park ea nostrud viral voluptate brooklyn bicycle rights minim duis.<p>
+     <p>I’m the co-founder of <a href="http://clothesliner.com">Clothesliner</a>. I previously worked in management consulting at Harbor Research and studied economics and political science at UCLA.<br/><br/>
+       In 2011, I read <a href="http://www.paulgraham.com/love.html">How To Do What You Love</a> by Paul Graham and began learning to program.<br/><br/>
+       I play ultimate frisbee, ride my bicycle and reside in San Francisco, California. My favorite artists are Elvis Costello, P.G. Wodehouse, Kazuo Ishiguro, <a href="/derain/">Andre Derain</a>, Woody Allen, Wes Anderson and Belle & Sebastian.<br/><br/>
+       Please feel free to contact me. I love to meet and hear from new people.<br/><br/>
+       </p>
+
+
+
     </div><!--closes about-->
   </div><!--closes main-->
 <center>
