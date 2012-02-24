@@ -30,7 +30,8 @@
         <link rel="stylesheet" href="{% get_static_prefix %}css/base.css">
         <link rel="stylesheet" href="{% get_static_prefix %}css/skeleton.css">
         <link rel="stylesheet" href="{% get_static_prefix %}css/layout.css">
-        <link rel="stylesheet" href="{% get_static_prefix %}css/kiva/kiva.css">
+{% block stylesheet %}
+{% endblock stylesheet %}
         <style type="text/css">
          body {background-image:url("{% get_static_prefix %}images/exclusive_paper.png")}
         </style>
