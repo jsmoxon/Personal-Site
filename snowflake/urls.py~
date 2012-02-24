@@ -1,3 +1,4 @@
+from django.views.generic.simple import direct_to_template
 from django.conf.urls.defaults import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
@@ -15,6 +16,8 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'derain/', 'snowflake.frontend.views.derain'),                   
     url(r'send_email', 'snowflake.frontend.views.send_email'),
+    url(r'^pagelever', direct_to_template, {'template': 'pagelever.html'}),
+
 )
 
 urlpatterns += patterns('django.contrib.staticfiles.views',
