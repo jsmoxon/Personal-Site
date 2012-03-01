@@ -20,6 +20,7 @@ urlpatterns = patterns('',
     url(r'^kiva', direct_to_template, {'template': 'kiva.html'}),
     url(r'^blurb', direct_to_template, {'template': 'blurb.html'}),
     url(r'^recurly', direct_to_template, {'template': 'recurly.html'}),
+    url(r'^songkick', direct_to_template, {'template': 'songkick.html'}),
 )
 
 urlpatterns += patterns('django.contrib.staticfiles.views',
