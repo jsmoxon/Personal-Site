@@ -1,0 +1,114 @@
+{% extends "index.html" %}
+{% load static %}
+{% block stylesheet %}
+        <link rel="stylesheet" href="{% get_static_prefix %}css/resume.css">
+{% endblock stylesheet %}
+
+
+
+{% block page %}
+<div id="topstripe">
+  <div class="container">
+    <div id="header" class="fourteen columns offset-by-one">
+      <a href="/"><img class="scale-with-grid offset-by-three" src="{% get_static_prefix %}images/jackmoxon.png"/></a>
+    </div><!--closes header-->
+    
+    <!--    <h3 id ="top_tag"class="ten columns offset-by-three">About me:</h3>-->
+  </div><!--container-->
+</div><!--topstripe-->
+
+<!--<div id="summary" class="">
+  <ul>
+    <li><h5>1. I'm passionate about technology, entrepreneurship and startups</h5></li>
+    <li><h5>2. I'm relentlessly resourceful - give me any task and I'll pick it up and run with it</h5></li>
+    <li><h5>3. In my 2.5 years in consulting, I managed relationships with clients at Fortune 500 tech companies and did lead generation</h5></li>
+    <li><h5>4. I'm not an engineer but have built apps using Python and Django</h5></li>
+    <li><h5>5. I write well</h5></li>
+  </ul>
+</div><!--closes summary-->
+
+
+<div class="container">
+  <div id="bluebanner">
+    <h3>is...</h3>
+  </div><!--blue banner-->
+  
+  <div id="main" class="sixteen columns">
+    
+    <div class="section sixteen columns">
+      <img src="{% get_static_prefix %}images/record.png" class="left"/>
+      <div class="desc_box right seven columns right">
+	<h4>A Quick Study</h4>
+	<p>6 months ago I didn't know the difference between CSS and Javascript. Today, I used Django, Python, HTML, CSS and Javascript to build this site. My other projects include <a href="http://remindr.us">Remindr</a>, <a href="http://clothesliner.com/demonstration">Clothesliner</a>, <a href="http://roommater.us">Roommater</a>, and <a href="http://essayr.com">Essayr</a>.</p>
+	<img src="{% get_static_prefix %}images/languages.png" width=300px/>
+      </div><!--closes desc_box-->
+    </div><!--closes section-->
+
+    <div class="section sixteen columns">
+      <div class="desc_box seven columns left">
+        <h4>Analytical</h4>
+        <p>I've spent the past 2.5 years at Harbor Research - a management consulting firm - developing sales, go-to-market and M&A strategy. I'm strong with Excel, PowerPoint, Word and graduated cum laude from UCLA with a degree in Economics.</p>
+        <img src="{% get_static_prefix %}images/analytical.png" width=300px/>
+      </div><!--closes desc_box-->
+      <img src="{% get_static_prefix %}images/record2.png" class="right"/>
+
+    </div><!--closes section-->
+
+    <div class="section sixteen columns">
+      <img src="{% get_static_prefix %}images/record3.png" class="left third_record"/>
+      <div class="desc_box right seven columns right">
+        <h4>Creative</h4>
+      <p>In college, I wanted to live and work in a developing country. Study abroad progams were too expensive and rigid so I created my own in Kathmandu, Nepal for a quarter of the cost. I worked for <a href="http://www.ecca.org.np/pages/homepage.php">ECCA</a> (an environmental NGO), lived in a rural village and learned to speak Nepali.</p>
+        <img src="{% get_static_prefix %}images/nepal.JPG" width=300px />
+      </div><!--closes desc_box-->
+    </div><!--closes section-->
+
+    <div class="section sixteen columns">
+      <div class="desc_box seven columns left">
+        <h4>Entrepreneurial</h4>
+      <p>After reading my first Paul Graham essay in 2011, I taught myself to code and launched <a href="http://clothesliner.com/demonstration">Clothesliner</a>. I even got a YCombinator interview and pitched him my idea for YC W12. In 2009, I helped launch <a href="http://theurbanfarmers.org">The Urban Farmers.org</a>, a non-profit 
+that has planted over 500 antique fruit trees for the needy in backyards across Lafayette, CA. <a href="http://roommater.us">Roommater</a> is an open-source project I started to help people find roommates.</p>
+	<a href="http://clothesliner.com"><img src="{% get_static_prefix %}images/clothesliner.png" width=300px/></a>
+        <a href="http://rooommater.us"><img src="{% get_static_prefix %}images/OKroommate.png" width=300px/></a>
+      </div><!--closes desc_box-->
+      <img src="{% get_static_prefix %}images/record4.png" class="right"/>
+
+    </div><!--closes section-->
+
+  </div><!--closes main-->
+
+ </div><!--closes container-->
+
+<div id="contact">
+  <h4>Get in touch at jsmoxon@gmail.com | 925.980.9837</h4>
+</div><!--closes contact-->
+
+<div id="footer">
+  <div id="fleft" class="container">
+  <div id="about" class="six columns offset-by-two">
+  <h4>About</h4>
+  <p>Jack Moxon is a startup enthusiast living in San Francisco, California. After graduating from UCLA with a degree in Economics and Political Science, he helped launch <a href="http://theurbanfarmers.org">The Urban Farmers.org</a> a non-profit in Lafayette, California that aims to educate Californians about local, sustainable agriculture. In 2009, he joined Harbor Research - a management consultancy that provides strategic consulting for Fortune 500 firms - as a business analyst. In 2012, he launched <a href="http://clothesliner.com/demonstration">Clothesliner</a> to help men find pants that fit. 
+<br/><br/>
+Jack now does business development at <a href="http://saucelabs.com">Sauce Labs</a>.
+<br/><br/>
+His top 5 records include Armed Forces by Elvis Costello, Pet Sounds by the Beach Boys, Nashville Skyline by Bob Dylan, Faithless Street by Whiskeytown, and XO by Elliot Smith.</p>
+  </div><!--closes about section-->
+  <div id="fright" class="six columns offset-by-one">
+    <img src="{% get_static_prefix %}images/jack_everest.png" width=300px />
+  </div><!--closes fright-->
+  </div><!--closes about-->
+  <div id="tag">
+    <h6>designed by <a href="http://jackmoxon.com">jack moxon</a> in san francisco, california</h6>
+  </div><!--tag-->
+</div><!--closes footer-->
+
+
+
+
+
+
+
+
+
+
+{% endblock page %}

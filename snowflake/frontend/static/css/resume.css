@@ -1,0 +1,112 @@
+#topstripe {
+
+}
+
+#header {
+margin-top:30px;
+}
+
+#header img {
+
+}
+
+#top_tag {
+margin-top:30px;
+text-align:center;
+}
+
+#summary {
+margin-bottom:70px;
+background:#1D1B48;
+min-height:230px;
+}
+
+#summary h5 {
+color: white;
+text-align:center;
+padding-top:10px;
+font-family:"Helvetica Neue";
+}
+
+#bluebanner {
+clear:both;
+padding:3px;
+text-align: center;
+}
+
+#bluebanner h3 {
+color:#5FAADF;
+}
+
+#main {
+margin-top:30px;
+}
+
+.desc_box {
+padding:1em;
+border-radius:5px;
+box-shadow:rgba(0,0,0,0.15) 0 2px 4px;
+background: white;
+text-align:center;
+margin-top:20px;
+}
+
+
+.left {
+float:left;
+margin-left:30px;
+}
+
+.third_record {
+margin-top:40px;
+}
+
+.right {
+float:right;
+margin-right:80px;
+margin-top:40px;
+}
+
+#footer {
+margin-top:-10px;
+padding:15px;
+}
+
+#footer, #footer h4 {
+color:white;
+background: #1C1C1C;
+}
+
+#footer h6 {
+color:white;
+text-align:center;
+}
+
+#tag {
+padding:30px;
+}
+
+#contact {
+background: #5FAADF;
+margin-top:20px;
+}
+
+#contact h4 {
+margin-left:auto;
+margin-right:auto;
+width:500px;
+height:50px;
+}
+
+#footer a, #footer a:visited {
+text-decoration:none;
+color:#5FAADF;
+}
+
+#fright {
+margin-top:60px;
+}
+
+#footer a:hover {
+color: grey;
+}
