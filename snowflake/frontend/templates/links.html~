@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block main %}
-<h3>Favorites</h3>
+<h4>Favorites</h4>
 <h5>Essays</h5>
 <ul class="link_list">
   <li><a href="http://www.paulgraham.com/love.html">How To Do What You Love -- Paul Graham</a></li>
