@@ -1,0 +1,41 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% get_static_prefix %}css/blog.css">   
+</head>
+<body>
+
+<h1>Enter Post</h1>
+<form action="" method="post">
+  {% csrf_token %}
+  <div id="writing">
+  <textarea name="body" id="body_text" class="prose" rows="20" cols="20" ></textarea>
+  </div>
+  <div id="other_info">
+    {{form.title.label}}
+    {{form.title}}
+    {{form.subtitle.label}}
+    {{form.subtitle}}
+    {{form.feeling.label}}
+    {{form.feeling}}
+    {{form.song.label}}
+    {{form.song}}
+    {{form.images.label}}
+    {{form.images}}
+    {{form.tags.label}}
+    {{form.tags}}
+  </div>
+  <input type="submit" value="Post!" />
+</form>
+<!--<script type="text/javascript" src="{% get_static_prefix %}js/jquery.js"></script>-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$(function () {
+  $(window).load(function () {
+$(':input:visible:enabled:first').focus();
+  });
+})
+});
+
+</script>
+</body>
