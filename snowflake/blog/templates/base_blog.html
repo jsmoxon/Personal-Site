@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+        <!-- Basic Page Needs                                                    \
+                  \                                                               
+                                                                                 \
+                                                                                  
+  ================================================== -->
+        <meta charset="utf-8">
+        <title>Jack Moxon</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!--[if lt IE 9]>                                                        \
+                  \                                                               
+                                                                                 \
+                                                                                  
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">\
+</script>         \                                                               
+                                                                                 \
+                                                                                  
+        <![endif]-->
+
+        <!-- Mobile Specific Metas                                               \
+                  \                                                               
+                                                                                 \
+                                                                                  
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maxim\
+um-scale=1">
+
+	<!-- CSS                                                                 \
+                  \                                                               
+                                                                                 \
+                                                                                  
+  ================================================== -->
+	<link rel="stylesheet" href="{% get_static_prefix %}css/base.css">
+	<link rel="stylesheet" href="{% get_static_prefix %}css/skeleton.css">
+	<link rel="stylesheet" href="{% get_static_prefix %}css/layout.css">
+	<link rel="stylesheet" href="{% get_static_prefix %}css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Stoke' rel='stylesheet' type='text/css'>
+
+
+	<!-- Javascript                                                          \
+                  \                                                               
+                                                                                 \
+                                                                                  
+        ================================================== -->
+
+        <!-- Favicons                                                             
+             ================================================== -->
+        <link rel="shortcut icon" href="{% get_static_prefix %}images/record4.png">
+</head>
+<body>
+<div id="container" class="container">
+  <div id="header" class="sixteen columns">
+    <div id="namediv" class="ten columns">
+<!--      <h1><a href="/">Jack Moxon</a>'s <a href="/blog/">Blog</a></h1>-->
+    <a href="/blog/"><img src="{% get_static_prefix %}images/jackbike.png" /></a>
+    </div><!--closes namediv-->
+    <div id="headerlinks" class="four columns">
+    </div><!--closes headerlinks-->
+  </div><!--closes header-->
+
+  <div id="main" class="sixteen columns">
+    <div id="content" class="ten columns">
+{% block main %}
+{% endblock main %}
+    </div><!--closes content-->
+
+    <div id="about" class="four columns">
+      <h4>About</h4>
+     <p>       
+       I try to write 500 words before I check the Internet every morning. The goal is to ensure that my time spent consuming information on the Internet ultimately serves the purpose of helping me produce my own content. I'm not always perfect about it. <br/><br/>Rarely, I'll write something worth sharing and post it here. 
+     </p>
+
+     <div id="info" class="">
+     </div><!--closes info-->
+
+     <div id="">
+       <h4>Archive</h4>
+       {% for post in posts %}
+       <h6><a href="/blog/{{post.id}}">{{post}}</a></h6>
+       {% endfor %}
+     </div>
+
+    </div><!--closes about-->
+  </div><!--closes main-->
+<center>
+  <div id="footer" class="eight columns offset-by-four">
+    <ul>
+      <li><a href="/resume/">Resume</a></li>
+      <li><a href="/cv/">CV</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/links/">Favorites</a></li>
+      <li><a href="/contact/">Contact</a></li>
+  </div><!--closes footer-->
+</center>
+
+</div><!--closes container-->

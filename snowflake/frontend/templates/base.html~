@@ -60,7 +60,7 @@
     
     <div id="about" class="six columns">
       <h4>About</h4>
-     <p>I’m the co-founder of <a href="http://clothesliner.com">Clothesliner</a>. I previously worked in management consulting at Harbor Research and studied economics and political science at UCLA.<br/><br/>
+     <p>I am a startup enthusiast that does business development at <a href="http://saucelabs.com">Sauce Labs</a>. I was previously the co-founder of <a href="http://clothesliner.com">Clothesliner</a> and studied economics and political science at UCLA.<br/><br/>
        In 2011, I read <a href="http://www.paulgraham.com/love.html">How To Do What You Love</a> by Paul Graham and began learning to program.<br/><br/>
        I play ultimate frisbee, ride my bicycle and reside in San Francisco, California. My favorite artists are Elvis Costello, P.G. Wodehouse, Kazuo Ishiguro, <a href="/derain/">Andre Derain</a>, Woody Allen, Wes Anderson and Belle & Sebastian.<br/><br/>
        Please feel free to contact me. I love to meet and hear from new people.<br/><br/>
@@ -71,8 +71,9 @@
     </div><!--closes about-->
   </div><!--closes main-->
 <center>
-  <div id="footer" class="six columns offset-by-five">
+  <div id="footer" class="eight columns offset-by-four">
     <ul>
+      <li><a href="/resume/">Resume</a></li>
       <li><a href="/cv/">CV</a></li>
       <li><a href="/projects/">Projects</a></li>
       <li><a href="/links/">Favorites</a></li>
