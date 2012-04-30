@@ -6,6 +6,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
 import string
 
+def json_test(request):
+    return render_to_response("json_test.html")
 
 def home(request):
     return render_to_response('photo.html')
