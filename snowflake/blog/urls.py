@@ -12,7 +12,7 @@ urlpatterns = patterns('',
     url(r'^tags/(?P<tag>\d+)/', 'blog.views.tag_search'),
     url(r'^enter/', 'blog.views.enter_post'),
 #    url(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),                           
-    url(r'^feed/$', LatestPosts()),                       
+#    url(r'^feed/$', LatestPosts()),                       
 )
 
 urlpatterns += patterns('django.contrib.staticfiles.views',

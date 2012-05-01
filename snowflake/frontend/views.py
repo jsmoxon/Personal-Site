@@ -6,6 +6,9 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
 import string
 
+def alert(request):
+    return render_to_response("alert.html")
+
 def json_test(request):
     return render_to_response("json_test.html")
 
