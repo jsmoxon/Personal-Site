@@ -3,6 +3,30 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript">
     alert("ah!")
+function getJSONP(url, success) {
+
+    var ud = '_' + +new Date,
+        script = document.createElement('script'),
+        head = document.getElementsByTagName('head')[0] 
+               || document.documentElement;
+
+    window[ud] = function(data) {
+        head.removeChild(script);
+        success && success(data);
+    };
+
+    script.src = url.replace('callback=?', 'callback=' + ud);
+    head.appendChild(script);
+
+}
+
+var soundcloud = "http://soundcloud.com/oembed?url=http%3A//soundcloud.com/forss/flickermood&format=js&callback=?";
+var local = "http://localhost:8000/json_test";
+var google = "http://code.google.com/chrome/extensions/examples/api/browserAction/set_icon_path/manifest.json";
+getJSONP(local, function(data){
+    console.log(data);
+    alert(data)
+}); 
   </script>
 
 </head>
