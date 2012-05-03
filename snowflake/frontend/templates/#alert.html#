@@ -5,7 +5,6 @@
     $(document).ready(function() {
       var test = jQuery.getJSON("http://127.0.0.1:8000/json_test", function(json) {
       alert(json.name+json.age)
-      
     })
   })
   </script>
