@@ -3,7 +3,7 @@ from models import *
 
 class LatestPosts(Feed):
     title = "Jack Moxon's Blog"
-    link = "/blog/"
+    link = "http://www.jackmoxon.com/blog/"
     description = "Latest blog posts..."
     
     def items(self):
