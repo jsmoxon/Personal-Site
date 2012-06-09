@@ -46,7 +46,7 @@
 <div id="container" class="container">
   <div id="header" class="sixteen columns">
     <div id="namediv" class="six columns">
-      <h1><a href="/">Jack Moxon</a></h1>
+      <a href="/"><img src="{% get_static_prefix %}images/jackbike.png" /></a>
     </div><!--closes namediv-->
     <div id="headerlinks" class="four columns">
     </div><!--closes headerlinks-->
@@ -75,6 +75,7 @@
     <ul>
       <li><a href="/resume/">Resume</a></li>
       <li><a href="/cv/">CV</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="/projects/">Projects</a></li>
       <li><a href="/links/">Favorites</a></li>
       <li><a href="/contact/">Contact</a></li>
