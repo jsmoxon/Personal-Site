@@ -3,15 +3,13 @@ from django.conf.urls.defaults import patterns, include, url
 from feeds import LatestPosts
 
 
-feeds = {'blog':LatestPosts}
 
 urlpatterns = patterns('',
     url(r'^$', 'blog.views.home'),                       
     url(r'^(?P<blog>\d+)/', 'blog.views.single_post'),                       
     url(r'^tags/(?P<tag>\d+)/', 'blog.views.tag_search'),
     url(r'^enter/', 'blog.views.enter_post'),
-#    url(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),                           
-    url(r'^latest/feed/$', LatestPosts()),
+                       url(r'^latest/feed/$', LatestPosts()),
 )
 
 urlpatterns += patterns('django.contrib.staticfiles.views',
