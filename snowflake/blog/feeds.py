@@ -7,13 +7,13 @@ class LatestPosts(Feed):
     description = "Latest posts..."
     
     def items(self):
-        return Post.objects.order_by('-datetime')[:3]
+        return Post.objects.order_by('-datetime')[:50]
     
     def item_title(self, item):
         return item.title
     
     def item_description(self, item):
-        return item.subtitle
+        return item.body
     
     def item_link(self, item):
         return "/blog/"
