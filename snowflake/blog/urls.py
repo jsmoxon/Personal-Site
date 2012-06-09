@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     url(r'^(?P<blog>\d+)/', 'blog.views.single_post'),                       
     url(r'^tags/(?P<tag>\d+)/', 'blog.views.tag_search'),
     url(r'^enter/', 'blog.views.enter_post'),
-                       url(r'^latest/feed/$', LatestPosts()),
+    url(r'^latest/feed/$', LatestPosts()),
 )
 
 urlpatterns += patterns('django.contrib.staticfiles.views',
