@@ -16,4 +16,4 @@ class LatestPosts(Feed):
         return item.subtitle
     
     def item_link(self, item):
-        return "/blog/"
+        return "http://jackmoxon.com/blog/"+item.id
