@@ -13,7 +13,7 @@ class LatestPosts(Feed):
         return item.title
     
     def item_description(self, item):
-        return item.body
+        return item.subtitle
     
     def item_link(self, item):
         return "/blog/"
