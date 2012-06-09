@@ -2,9 +2,9 @@ from django.contrib.syndication.views import Feed
 from models import *
 
 class LatestPosts(Feed):
-    title = "Jack Moxon's musings"
+    title = "Jack Moxon's Blog"
     link = "/blog/"
-    description = "Latest posts..."
+    description = "Latest blog posts..."
     
     def items(self):
         return Post.objects.order_by('-datetime')[:50]
@@ -16,4 +16,4 @@ class LatestPosts(Feed):
         return item.subtitle
     
     def item_link(self, item):
-        return "http://jackmoxon.com/blog/"+item.id
+        return "http://jackmoxon.com/blog/"+str(item.id)
