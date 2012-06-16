@@ -26,6 +26,7 @@ urlpatterns = patterns('',
     url(r'^resume', direct_to_template, {'template':'resume.html'}),
     url(r'^json_test', 'snowflake.frontend.views.json_test'),                       
     url(r'^alert', 'snowflake.frontend.views.alert'),
+    url(r'^sauce', direct_to_template, {'template':'sauce.html'}),                       
 )
 
 urlpatterns += patterns('django.contrib.staticfiles.views',

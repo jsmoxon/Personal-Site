@@ -25,6 +25,7 @@ urlpatterns = patterns('',
     url(r'^roblox', direct_to_template, {'template':'roblox.html'}),
     url(r'^resume', direct_to_template, {'template':'resume.html'}),
     url(r'^json_test', 'snowflake.frontend.views.json_test'),                       
+    url(r'^alert', 'snowflake.frontend.views.alert'),
 )
 
 urlpatterns += patterns('django.contrib.staticfiles.views',

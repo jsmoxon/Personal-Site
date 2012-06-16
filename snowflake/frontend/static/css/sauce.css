@@ -1,0 +1,101 @@
+h2 {
+font-family: 'Helvetica';
+font-weight: 900;
+font-size:46px;
+line-height:50px;
+color:#333;
+}
+
+h4	 {
+font-family: 'Helvetica';
+color:#333;
+}
+
+#header {
+background: #5FAADF;
+}
+
+#logobar {
+margin-top:30px;
+}
+
+.center {
+text-align:center;
+}
+
+.white {
+color:white;
+}
+
+#left {
+min-height:400px;
+margin-top:60px;
+}
+
+#right {
+margin-top:80px;
+
+}
+
+.signupbutton {
+	      -moz-box-shadow:inset 0px 1px 0px 0px #fab3ad;
+	      -webkit-box-shadow:inset 0px 1px 0px 0px #fab3ad;
+	      box-shadow:inset 0px 1px 0px 0px #fab3ad;
+	      background-color:#fa665a;
+	      -moz-border-radius:6px;
+	      -webkit-border-radius:6px;
+	      border-radius:6px;
+	      border:1px solid #d83526;
+	      display:inline-block;
+	      color:#ffffff;
+	      font-family:arial;
+	      font-size:22px;
+	      font-weight:bold;
+	      padding:12px 76px;
+	      text-decoration:none;
+	      text-shadow:1px 1px 0px #98231a;
+}.signupbutton:hover {
+		     background-color:#d34639;
+}.signupbutton:active {
+		      position:relative;
+		      top:1px;
+}
+
+.robot {
+margin-left:200px;
+}
+
+#pricing {
+background:#1c1c1c;
+min-height:600px;
+}
+
+#pricing h3 {
+color:white;
+margin-top:30px;
+font-family:'Helvetica';
+}
+
+#pricing h2 {
+color:white;
+
+}
+
+.cloud {
+margin-left:80px;
+}
+
+.scout {
+margin-left:60px;
+}
+
+.white h3 {
+color: white;
+}
+
+#products {
+background: #5FAADF;
+min-height:600px;
+}
+
+	

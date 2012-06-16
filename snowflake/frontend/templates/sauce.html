@@ -1,0 +1,64 @@
+{% extends "index.html" %}
+{% load static %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{% get_static_prefix %}css/sauce.css">
+{% endblock stylesheet %}
+
+{% block page %}
+<div id="header">
+  <a href=""><h5 class="center white">Try out Sauce today and get some free Sauce!</h5></a>
+</div>
+
+<div class="container">
+  <div id="logobar"class="sixteen columns">
+  <img src="{% get_static_prefix%}images/saucelogo.png" />
+
+  </div>
+  <div class="ten columns" id="left">
+    <iframe width="480" height="315" src="http://www.youtube.com/embed/9pyXKWOVwLA" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="six columns" id="right">
+    <h2 class="center">Find. Bugs. Faster.</h2>
+    <h4 class="center">Run your Selenium scripts in the cloud and find bugs before your users do.</h4>
+
+    <button class="signupbutton">Try It Free Now!</button>
+  </div>
+  <div id="robot" class="sixteen columns">
+    <img class="robot" src="{% get_static_prefix%}images/robot.svg" width=150px/>
+  </div>
+
+</div>
+
+<div id="pricing">
+  <div class="container">
+    <h2 class="center">2 Incredible Testing Tools</h2>
+    <div class="eight columns">
+      <h3 class="center">OnDemand</h3>
+      <img class="cloud" src="{% get_static_prefix%}images/cloud.png" width=200px/>
+      <ul class="white">
+	<li><h3>Automated Testing in the Cloud</h3></li>
+      </ul>
+    </div>
+    <div class="eight columns">
+      <h3 class="center">Scout</h3>
+      <img class="scout" src="{% get_static_prefix%}images/scout.png" width=100px/>
+            <ul class="white">
+        <li><h3>Interactive Testing Made Easy</h3></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="products">
+  <div class="container">
+    <h2 class="center">Pricing</h2>
+  </div>
+</div>
+
+<div id="pricing">
+  <div class="container">
+    <h2 class="center">Customer Reviews</h2>
+  </div>
+</div>
+
+{% endblock page %}
